@@ -1,0 +1,106 @@
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;  
+  list-style: none;
+  justify-content: left;
+  
+}
+
+ul li {
+    border: 5px outset grey;
+    background: linear-gradient(30deg,  hsl(223, 42%, 73%)0%,  hsl(223, 42%, 53%) 30%,  hsl(223, 42%, 33%)60%,  hsl(223, 42%, 13%)100%);
+    color: white !important;
+    
+    
+}
+
+ul li:hover {
+    transform: scale(1.2);
+    /* transform: translateY(-0.2rem); */
+    cursor: pointer;
+}
+
+
+#home {
+    background-color: aqua;
+    color: red;
+    width: fit-content;
+    
+}
+#about {
+    background-color: rgb(31, 50, 50);
+    color: rgb(181, 29, 29);
+    width: fit-content;
+
+}
+#contacts {
+    background-color: rgb(72, 173, 18);
+    color: rgb(107, 21, 182);
+    width: fit-content;
+
+}
+/* ugly but temporary */
+body {
+    height: 100vh;
+    background: linear-gradient(160deg, rgb(31, 50, 50) 0%,rgb(107, 21, 182)100%);
+     background-size: cover;
+     background-repeat: no-repeat;
+    
+}
+
+
+#imgDiv {
+    display: flex;
+    height: 400px; 
+    width: 100%; 
+    background-image: url("images/hero.jpg");
+    align-items: center;
+    justify-content: center;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    
+}
+
+#homeSection 
+{
+    height: 200px;
+    width: 100%;
+    background-color: aquamarine;
+    color: hsl(160, 100%, 0%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    padding: 5px 10px;
+
+}
+#aboutSection 
+{
+    height: 200px;
+    width: 100%;
+    background-color: hsl(200, 100%, 75%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    padding: 5px 10px;
+
+}
+#contactSection 
+{
+    height: 200px;
+    width: 100%;
+    background-color: hsl(220, 100%, 75%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 2px 0px;
+    padding: 5px 10px;
+
+}
+
+
+
+
