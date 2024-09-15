@@ -1,10 +1,9 @@
 
 ul{
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;  
+  flex-direction: row;
   list-style: none;
-  justify-content: left;
+  justify-content: space-evenly;
   
 }
 
@@ -20,6 +19,7 @@ ul li:hover {
     transform: scale(1.2);
     /* transform: translateY(-0.2rem); */
     cursor: pointer;
+    box-shadow: 0px 0px 5px white;
 }
 
 
@@ -27,6 +27,7 @@ ul li:hover {
     background-color: aqua;
     color: red;
     width: fit-content;
+   
     
 }
 #about {
@@ -44,7 +45,7 @@ ul li:hover {
 /* ugly but temporary */
 body {
     height: 100vh;
-    background: linear-gradient(160deg, rgb(31, 50, 50) 0%,rgb(107, 21, 182)100%);
+    background: linear-gradient(160deg, rgb(31, 50, 50) 0%,rgb(107, 21, 182)100%) !important;
      background-size: cover;
      background-repeat: no-repeat;
     
@@ -53,18 +54,24 @@ body {
 
 #imgDiv {
     display: flex;
-    height: 400px; 
+
+    height: 550px; 
     width: 100%; 
     background-image: url("images/hero.jpg");
     align-items: center;
     justify-content: center;
-    background-size: contain; 
+    background-size: cover; 
     background-repeat: no-repeat; 
+    background-position: center;
+    box-shadow: 0px 0px 5px white;
     
 }
 
 #homeSection 
 {
+    
+    
+    
     height: 200px;
     width: 100%;
     background-color: aquamarine;
@@ -74,6 +81,8 @@ body {
     font-size: 1.2rem;
     margin: 20px 0px;
     padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px aquamarine;
 
 }
 #aboutSection 
@@ -86,6 +95,8 @@ body {
     font-size: 1.2rem;
     margin: 20px 0px;
     padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px hsl(200, 100%, 75%);
 
 }
 #contactSection 
@@ -98,6 +109,8 @@ body {
     font-size: 1.2rem;
     margin: 2px 0px;
     padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px hsl(220, 100%, 75%);
 
 }
 
