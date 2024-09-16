@@ -115,5 +115,11 @@ body {
 }
 
 
-
+@media (max-width:480px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }    
+}
 
